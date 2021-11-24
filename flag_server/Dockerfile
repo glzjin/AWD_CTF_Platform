@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3.10.0b2
 RUN apt-get update && apt-get upgrade -y && apt-get install -y libsqlite3-dev,sqlite3
 ENV PYTHONUNBUFFERED 1
 ADD webapps /webapps
